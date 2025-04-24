@@ -421,10 +421,10 @@ getDataCont <- function(arm, resprate, dist='norm'){
 getCurrentData = function(datlist, looktime, n, as.followup=TRUE){
   n = suppressWarnings(as.numeric(n))
   if (is.na(n)){
-    stop("Supply valid integer for num subjects n.")
+    stop("Num subjects (n) supplied as  NA.")
   }
   if (is.na(looktime)){
-    stop("Supply valid numeric for num subjects n.")
+    stop("Looktime supplied as NA.")
   }
 
   if (as.followup){
